@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .clock-container {
+    text-align: center;
+    background: #333;
+    padding: 30px 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: background 0.5s;
+  }
+  
+  #clock {
+    font-size: 60px;
+    margin: 10px 0;
+  }
+  
+  #date {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  #ampm {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  #greeting {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    margin-top: 15px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input[type="color"] {
+    margin-left: 10px;
+    height: 35px;
+    width: 35px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .light-theme {
+    background-color: #f4f4f4;
+    color: #000000;
+  }
+  
+  .light-theme .clock-container {
+    background-color: #ffffff;
+  }
+  
+  .colon {
+    animation: blink 1s infinite;
+  }
+  .alarm-section {
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .alarm-section input,
+  .alarm-section button {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .light-theme .alarm-section {
+    color: #000;
+  }
+  
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .alarm-section {
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .alarm-section input[type="time"],
+  .alarm-section input[type="text"] {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    width: 150px;
+  }
+  
+  .alarm-section button {
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #alarmList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  #alarmList li {
+    margin: 10px 0;
+    background: #555;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  #alarmList button {
+    margin-left: 5px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  .light-theme #alarmList li {
+    background: #ddd;
+    color: black;
+  }
+  
